@@ -5,12 +5,13 @@ from django.contrib.auth.models import User
 class BookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
-        fields = '__all__'
+        fields = ['id', 'title', 'author', 'year_released']
+        read_only_fields = ['author']
 
 
 class UserRegistrationSerializer(serializers.ModelSerializer):
     class Meta:
-        model = User
+        model = User 
         fields = ['username','email', 'password']
         extra_kwargs = {'password': {'write_only': True}}
 

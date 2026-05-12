@@ -167,3 +167,55 @@ button {
     width: 100%;
   }
 }
+
+
+/* Login card centering tweak */
+.login-card {
+  max-width: 520px;
+  text-align: center;
+}
+
+/* subtitle */
+.subtitle {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+/* footer text */
+.footer-text {
+  margin-top: 15px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.footer-text span {
+  color: #667eea;
+  cursor: pointer;
+}
+
+.footer-text span:hover {
+  text-decoration: underline;
+}
+
+/* Messsages css*/
+.message-banner {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.message-banner.error {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #ff4d4d;
+  border: 1px solid #ff4d4d;
+}
+
+.message-banner.success {
+  background-color: rgba(0, 255, 0, 0.1);
+  color: #2ecc71;
+  border: 1px solid #2ecc71;
+}
